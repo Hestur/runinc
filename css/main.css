@@ -8,7 +8,7 @@
     display:grid;
 
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 100px 1fr 300px
+    grid-template-rows: 100px 1fr 300px;
 
 }
 
@@ -93,6 +93,7 @@ border-bottom: 2px solid black;
 color:orange;
 }
 
+
   
 
 main{
@@ -104,11 +105,14 @@ main{
 main section{
     width:100%;
     height: 100vh;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 10% 10% 10% 10% 10% 10% 10% 10% 10% 10%;   ;
+   
     display: grid;
 }
-main section img{
+#home{
+    grid-template-columns: 2fr 2fr;
+    grid-template-rows: 2fr 100px 1fr;
+}
+#home img{
 grid-column:1/-1;
 grid-row:1/-1;
 width: 100%;
@@ -116,11 +120,94 @@ height: 100%;
 object-fit: cover;
 object-position: top;
 }
-.infobox{
-    grid-column: 2/-1;
-    grid-row: 6/7;
+#home .infobox{
+    grid-column: 2/3;
+    grid-row: 2/3;
     padding: 50px;
     background-color: black;
+}
+#event{
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 100px 2fr;
+}
+#event img{
+grid-column:1/4;
+grid-row:1/-1;
+width: 100%;
+height: 100%;
+object-fit: cover;
+object-position: top;
+}
+#event .infobox{
+    grid-column: 1/3;
+    grid-row: 2/3;
+    padding: 50px;
+    background-color: black;
+}
+#event .eventtext{
+    grid-column: 4/-1;
+    grid-row: 1/-1;
+    padding: 50px;
+    background-color: yellow;
+}
+#event .eventtext h1{
+    padding-top: 30px;
+    padding-bottom: 20px;
+    margin-right: 100px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 10px;    
+    font-size: 2.5em;
+    text-align: left;
+   color: black;
+   text-transform: uppercase;
+    
+}
+#event .eventtext h3{
+    padding-top: 1px;
+    margin-right: 100px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 10px;    
+    font-size: 1.2em;
+    text-align: left;
+   color: black;
+   line-height: 100%;
+   text-transform: uppercase;
+    
+}
+#event .eventtext h4{
+    margin-right: 100px;
+
+    font-family: 'Raleway', sans-serif;
+    font-weight: 10px;    
+    font-size: 1em;
+    text-align: left;
+   color: black;
+   line-height: 100%;
+   text-transform: uppercase;
+    
+}
+#event .eventtext h5{
+    margin-right: 100px;
+    padding-bottom: 10px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 10px;    
+    font-size: 0.8em;
+    text-align: left;
+   color: black;
+   line-height: 100%;
+  
+      
+}
+#event .eventtext h6{
+    padding-top: 1px;
+    padding-bottom: 20px;
+    margin-right: 100px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 10px;    
+    font-size: 0.6em;
+    text-align: left;
+   color: black;
+   line-height: 100%;     
 }
 .infobox h2{
     
@@ -148,13 +235,27 @@ object-position: top;
    line-height: 15%;
    text-transform: uppercase; 
 }
-.eventtext{
-    grid-column: 3/-1;
+
+
+section{
+    width: 100%;
+    height: 100%;
+
+
+}
+.fontcolor{
+    color: yellow;
+}
+
+
+#shop .shoptext{
+grid-column: 1/2;
     grid-row: 1/-1;
     padding: 50px;
     background-color: yellow;
+    width: 50%;
 }
-.eventtext h1{
+#shop .shoptext h1{
     padding-top: 30px;
     padding-bottom: 20px;
     margin-right: 100px;
@@ -166,31 +267,29 @@ object-position: top;
    text-transform: uppercase;
     
 }
-.eventtext h3{
-    padding-top: 1px;
-    margin-right: 100px;
+#shop .shoptext h2{
+ 
     font-family: 'Raleway', sans-serif;
     font-weight: 10px;    
-    font-size: 1.2em;
+    font-size: 1.5em;
+    text-align: left;
+   color: black;
+   text-transform: uppercase;
+    
+}
+#shop .shoptext h4{
+    margin-bottom: 20px;
+    margin-top: 5px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 10px;    
+    font-size: 0.7em;
     text-align: left;
    color: black;
    line-height: 100%;
    text-transform: uppercase;
     
 }
-.eventtext h4{
-    margin-right: 100px;
-
-    font-family: 'Raleway', sans-serif;
-    font-weight: 10px;    
-    font-size: 1em;
-    text-align: left;
-   color: black;
-   line-height: 100%;
-   text-transform: uppercase;
-    
-}
-.eventtext h5{
+#shop .shoptext h5{
     margin-right: 100px;
     padding-bottom: 10px;
     font-family: 'Raleway', sans-serif;
@@ -202,7 +301,7 @@ object-position: top;
   
       
 }
-.eventtext h6{
+#shop .shoptext h6{
     padding-top: 1px;
     padding-bottom: 20px;
     margin-right: 100px;
@@ -211,46 +310,67 @@ object-position: top;
     font-size: 0.6em;
     text-align: left;
    color: black;
-   line-height: 100%;
-  
-      
+   line-height: 100%;     
 }
-.shoptext{
+#shop{
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    display:grid;
+}
+#sko1 img{
+grid-column:2/3;
+grid-row:2/3;
+width: 60%;
+height: 60%;
+object-fit: contain;
+object-position: top;
+
+}
+#sko1 img{
+    grid-column:3/4;
+    grid-row:2/3;
+    width: 60%;
+    height: 60%;
+    object-fit: contain;
+    border-color: black;
+   border-style: solid;
+   border-width: 5px;    
+    }
+#sko2 img{
+    grid-column:4/5;
+    grid-row:2/3;
+    width: 60%;
+    height: 60%;
+    object-fit: contain;
+    border-color: black;
+   border-style: solid;
+   border-width: 5px;    
+    
+}
+#sko3 img{
+    grid-column:1/-1;
+    grid-row:1/-1;
+    width: 60%;
+    height: 60%;
+    object-fit: contain;
+    border-color: black;
+   border-style: solid;
+   border-width: 5px;    
+}
+#sko4 img{
+    grid-column:1/-1;
+    grid-row:1/-1;
+    width: 60%;
+    height: 60%;
+    object-fit: contain;
+    border-color: black;
+   border-style: solid;
+   border-width: 5px;    
+    
+    }
+#shop .infobox{
+    grid-column: 4/5;
+    grid-row: 2/3;
     padding: 50px;
-    background-color: lawngreen;
-    grid-column: 0/1;
-    grid-row: 1/-1;
-}
-.shoptext h1{
-    padding-top: 30px;
-    padding-bottom: 20px;
-    margin-right: 100px;
-    font-family: 'Raleway', sans-serif;
-    font-weight: 10px;    
-    font-size: 2.5em;
-    text-align: left;
-   color: black;
-   text-transform: uppercase;
-}
-#yellow{
-    color: yellow;
-}
-
-.home{
-    background-color: aqua;
-}
-#event{
- 
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
-
-
-
-#contact{
-background-color: lightcoral;
+    background-color: black;
 }
