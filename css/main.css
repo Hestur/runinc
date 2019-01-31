@@ -327,8 +327,7 @@ object-position: top;
 
 }
 #sko1 img{
-    grid-column:3/4;
-    grid-row:2/3;
+   margin-top: 100px;
     width: 60%;
     height: 60%;
     object-fit: contain;
@@ -337,8 +336,7 @@ object-position: top;
    border-width: 5px;    
     }
 #sko2 img{
-    grid-column:4/5;
-    grid-row:2/3;
+    margin-top: 100px;
     width: 60%;
     height: 60%;
     object-fit: contain;
@@ -348,8 +346,7 @@ object-position: top;
     
 }
 #sko3 img{
-    grid-column:1/-1;
-    grid-row:1/-1;
+    margin-top: 100px;
     width: 60%;
     height: 60%;
     object-fit: contain;
@@ -358,8 +355,7 @@ object-position: top;
    border-width: 5px;    
 }
 #sko4 img{
-    grid-column:1/-1;
-    grid-row:1/-1;
+    margin-top: 100px;
     width: 60%;
     height: 60%;
     object-fit: contain;
@@ -368,9 +364,41 @@ object-position: top;
    border-width: 5px;    
     
     }
-#shop .infobox{
+
+#sko5 img{
+    margin-top: 100px;
+    width: 60%;
+    height: 60%;
+    object-fit: contain;
+    border-color: black;
+    border-style: solid;
+    border-width: 5px;    
+}
+
+#sko6 img{
+    margin-top: 100px;
+    width: 60%;
+    height: 60%;
+    object-fit: contain;
+    border-color: black;
+   border-style: solid;
+   border-width: 5px;    
+    
+    }
+#shop .infobox3{
+   margin-top: 100px;
     grid-column: 4/5;
-    grid-row: 2/3;
+    grid-row: 1 /2;
     padding: 50px;
     background-color: black;
+    height: 5%;
+}
+#shop .infobox3 h2{
+    font-family: 'Raleway', sans-serif;
+    font-weight: 20px;    
+    font-size: 4em;
+    text-align: right;
+   color: aliceblue;
+   line-height: 15%;
+   text-transform: uppercase; 
 }
