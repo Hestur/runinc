@@ -1,6 +1,6 @@
-@import url('https://fonts.googleapis.com/css?family=Raleway');
+    @import url('https://fonts.googleapis.com/css?family=Raleway');
 
-#gridlayout{
+#gridlayout{        
 
     width: 100%;
     min-height: 1000px;
@@ -243,9 +243,9 @@ section{
 
 
 }
-.fontcolor{
-    color: yellow;
-}
+    .fontcolor{
+        color: yellow;
+    }
 
 
 #shop .shoptext{
