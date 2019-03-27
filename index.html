@@ -11,15 +11,15 @@
     <script src="main.js"></script>
 </head>
 <body>
-  <div id="gridlayout">
-    <header>
-        <section class="logo">
+  <div id="gridlayout" class="gridlayout" data-component="GridLayOut">
+    <header class="header" data-component="Header">
+        <section class="logo" data-component="Logo">
 
         <img src="gfx/runinc_logo.svg" alt="logo">
 
         </section>
 
-        <nav>
+        <nav class="nav" data-component="Nav">
            <ul>
                <li><a href="#home">Home</a></li>
                <li><a href="#events">Events</a></li>
@@ -30,7 +30,7 @@
         <!-- <div id="topnav"><input type="text" name="mail" id="search"></div> -->
         <div id="searchbar"><input type="text" name="mail" id="search"><button id="knap">SEARCH</button></div>
     </header>
-        <main><section id="home">
+        <main class="main" data-component="MMain"><section id="home">
             <img src="gfx/hero.jpg" alt="mainhero">
             <div class="infobox">
                 <h2>we love <b class="fontcolor">running</b></h2>
